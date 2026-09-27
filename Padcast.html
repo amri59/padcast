@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وقتی هیچ‌کس جز خودت مسئول زندگی‌ات نیست — آزادی در بحران — جزوه جامع دوره هوش مصنوعی و دیتاساینس</title>
+
+    <!-- فونت وزیرمتن (محلی) -->
+    <link rel="stylesheet" href="assets/Vazirmatn-font-face.css">
+
+    <!-- استایل مشترک -->
+    <link rel="stylesheet" href="assets/shared-styles.css">
+
+    <!-- Prism.js برای هایلایت کد (محلی) -->
+    <link rel="stylesheet" href="assets/prism-tomorrow.min.css" id="prism-theme-dark" disabled="">
+    <link rel="stylesheet" href="assets/prism.min.css" id="prism-theme-light">
+
+    <!-- ============================================================
+         MathJax Configuration
+         ============================================================ -->
+    <script>
+        window.MathJax = {
+            loader: {
+                load: [
+                    '[tex]/ams',
+                    '[tex]/boldsymbol',
+                    '[tex]/mathtools',
+                    '[tex]/color',
+                    '[tex]/textmacros',
+                    '[tex]/textcomp',
+                    '[tex]/html'
+                ]
+            },
+            tex: {
+                packages: {'[+]': ['ams', 'boldsymbol', 'mathtools', 'color', 'textmacros', 'textcomp', 'html']},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                tags: 'none'
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                scale: 1.0,
+                displayAlign: 'center',
+                displayIndent: '0'
+            },
+            startup: {
+                typeset: true,
+                pageReady: function() {
+                    return MathJax.startup.defaultPageReady().then(function() {
+                        console.log('✅ MathJax ready');
+                        window.__mathJaxReady = true;
+                        if (window.retypesetMath) window.retypesetMath();
+                    });
+                }
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="assets/tex-mml-chtml.js" id="MathJax-script" async=""></script>
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style></head>
+<body class="" style="transition: padding-right 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+
+<!-- ============ سایدبار ============ -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>📑 فهرست مطالب</h2>
+        <button class="sidebar-close" id="sidebarClose" title="بستن">✕</button>
+    </div>
+    <div class="sidebar-body" id="sidebarBody"><div class="sidebar-session"><div class="sidebar-session-header" data-target="session-3"><div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:0;"><span class="session-num p2">?</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">وقتی هیچ‌کس جز خودت مسئول زندگی‌ات نیست — آزادی در بحران</span></div><span class="chevron">▼</span></div><ul class="sidebar-session-topics"><li><a href="#t-3-1" data-topic="t-3-1">📌 مقدمه — آزادی به‌عنوان یک سؤال سنگین در بحران<span class="sb-time">⏱ 00:00:00</span></a></li><li><a href="#t-3-2" data-topic="t-3-2">📌 پارادوکس آزادی — سبکی و سنگینی همزمان<span class="sb-time">⏱ 00:01:11</span></a></li><li><a href="#t-3-3" data-topic="t-3-3">📌 شروع صادقانه — وقتی «تو همیشه انتخاب داری» شبیه یک شوخی تلخ است<span class="sb-time">⏱ 00:03:42</span></a></li><li><a href="#t-3-4" data-topic="t-3-4">📌 تفاوت حیاتی «کنترل نداشتن» و «انتخاب نداشتن»<span class="sb-time">⏱ 00:05:01</span></a></li><li><a href="#t-3-5" data-topic="t-3-5">📌 چرا نداشتن انتخاب گاهی امن‌تر به نظر می‌رسد؟ — پناهگاه روانی<span class="sb-time">⏱ 00:06:47</span></a></li><li><a href="#t-3-6" data-topic="t-3-6">📌 آزادی به‌عنوان پاسخ — بازتعریف آزادی در بحران<span class="sb-time">⏱ 00:08:51</span></a></li><li><a href="#t-3-7" data-topic="t-3-7">📌 آیا بخشی از ما به نداشتن انتخاب عادت کرده است؟<span class="sb-time">⏱ 00:11:08</span></a></li><li><a href="#t-3-8" data-topic="t-3-8">📌 بخش دوم: سنگینی مسئولیت — چرا آزادی در بحران اضطراب‌آور است؟<span class="sb-time">⏱ 00:13:25</span></a></li><li><a href="#t-3-9" data-topic="t-3-9">📌 آزادی یعنی نبود تضمین — عدم تضمین نتیجه<span class="sb-time">⏱ 00:15:34</span></a></li><li><a href="#t-3-10" data-topic="t-3-10">📌 مسئولیت در بحران — سنگین‌تر از همیشه<span class="sb-time">⏱ 00:17:48</span></a></li><li><a href="#t-3-11" data-topic="t-3-11">📌 چرا بعضی‌ها از آزادی فرار می‌کنند؟<span class="sb-time">⏱ 00:19:51</span></a></li><li><a href="#t-3-12" data-topic="t-3-12">📌 بخش سوم: قربانی بودن به‌عنوان پناهگاه روانی<span class="sb-time">⏱ 00:23:06</span></a></li><li><a href="#t-3-13" data-topic="t-3-13">📌 چرا قربانی بودن جذاب است؟ — سه مزیت روانی<span class="sb-time">⏱ 00:25:17</span></a></li><li><a href="#t-3-14" data-topic="t-3-14">📌 سه هزینه پنهان هویت قربانی<span class="sb-time">⏱ 00:26:45</span></a></li><li><a href="#t-3-15" data-topic="t-3-15">📌 عبور از قربانی بودن — تغییر زبان و تمرین دو ستون<span class="sb-time">⏱ 00:29:00</span></a></li><li><a href="#t-3-16" data-topic="t-3-16">📌 بخش چهارم: چه چیزی هنوز مال من است؟ — قلمروهای آزادی<span class="sb-time">⏱ 00:32:02</span></a></li><li><a href="#t-3-17" data-topic="t-3-17">📌 قلمرو اول: تفسیر — معنایی که به رویدادها می‌دهیم<span class="sb-time">⏱ 00:33:39</span></a></li><li><a href="#t-3-18" data-topic="t-3-18">📌 قلمرو دوم: پاسخ — فاصله بین محرک و واکنش<span class="sb-time">⏱ 00:34:43</span></a></li><li><a href="#t-3-19" data-topic="t-3-19">📌 قلمرو سوم: ارزش‌ها — قطب‌نمای درونی در بحران<span class="sb-time">⏱ 00:35:29</span></a></li><li><a href="#t-3-20" data-topic="t-3-20">📌 قلمرو چهارم: مرزها — حفظ کرامت در بحران<span class="sb-time">⏱ 00:36:16</span></a></li><li><a href="#t-3-21" data-topic="t-3-21">📌 قلمرو پنجم: توجه — جایی که توجه می‌رود، زندگی می‌رود<span class="sb-time">⏱ 00:37:07</span></a></li><li><a href="#t-3-22" data-topic="t-3-22">📌 قلمرو ششم: روایت — بحران بخشی از داستان است، نه تمام آن<span class="sb-time">⏱ 00:37:52</span></a></li><li><a href="#t-3-23" data-topic="t-3-23">📌 بخش پنجم: انتخاب کردن بدون کنترل — سوءتفاهم بزرگ درباره آزادی<span class="sb-time">⏱ 00:38:38</span></a></li><li><a href="#t-3-24" data-topic="t-3-24">📌 انتخاب‌های کوچک — پیچ‌های ظریف زندگی<span class="sb-time">⏱ 00:43:39</span></a></li><li><a href="#t-3-25" data-topic="t-3-25">📌 عاملیت — من بخشی از پاسخ هستم، نه فقط بخشی از مشکل<span class="sb-time">⏱ 00:44:45</span></a></li><li><a href="#t-3-26" data-topic="t-3-26">📌 آزادی در «نه گفتن» — کم کردن به جای اضافه کردن<span class="sb-time">⏱ 00:45:57</span></a></li><li><a href="#t-3-27" data-topic="t-3-27">📌 بحران میدان بازی را محدود می‌کند، اما شیوه بازی کردن را نه<span class="sb-time">⏱ 00:47:05</span></a></li><li><a href="#t-3-28" data-topic="t-3-28">📌 بخش ششم: مسئولیت بدون خشونت علیه خود<span class="sb-time">⏱ 00:48:19</span></a></li><li><a href="#t-3-29" data-topic="t-3-29">📌 مسئولیت بالغ — سه ویژگی اساسی<span class="sb-time">⏱ 00:51:19</span></a></li><li><a href="#t-3-30" data-topic="t-3-30">📌 شفقت با خود — با خودت مثل یک دوست خسته حرف بزن<span class="sb-time">⏱ 00:52:44</span></a></li><li><a href="#t-3-31" data-topic="t-3-31">📌 بخش هفتم: قدرت خاموش آزادی در بحران — جمع‌بندی نهایی<span class="sb-time">⏱ 00:55:46</span></a></li><li><a href="#t-3-32" data-topic="t-3-32">📌 مقاومت بی‌صدا — حفظ ساختار درونی در بحران<span class="sb-time">⏱ 00:57:19</span></a></li><li><a href="#t-3-33" data-topic="t-3-33">📌 آزادی یعنی من مؤلف داستان زندگی خودم هستم<span class="sb-time">⏱ 00:58:07</span></a></li><li><a href="#t-3-34" data-topic="t-3-34">📌 آزادی بدون توهم — پیمان پایانی<span class="sb-time">⏱ 00:59:39</span></a></li></ul></div></div>
+</aside>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1 style="margin-bottom: 0px; font-size: 2rem;" id="mainTitle"><br></h1>
+        <div class="top-bar-left">
+            <button class="menu-toggle" id="menuToggle" title="فهرست مطالب">
+                <span class="icon">📑</span>
+                <span>فهرست</span>
+            </button>
+            <button class="edit-toggle" id="editToggle" title="حالت ویرایش">
+                <span class="icon">✏️</span>
+                <span id="editLabel">ویرایش</span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" title="تغییر تم">
+                <span class="icon" id="themeIcon">☀️</span>
+                <span id="themeLabel">تم روشن</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="subhead" id="subheadText" style="">&nbsp;آزادی در بحران: تفاوت آزادی بیرونی و درونی، سنگینی مسئولیت، قربانی بودن به‌عنوان پناهگاه روانی، قلمروهای آزادی، انتخاب بدون کنترل و مسئولیت بدون خشونت علیه خود
+    </div>
+
+    <div class="session-grid" id="sessionGrid">
+
+        <div class="session-card" id="session-3">
+            <div class="session-header">
+                <span class="session-badge part2" style=""><br></span>
+                <span class="session-title" style="">وقتی هیچ‌کس جز خودت مسئول زندگی‌ات نیست — آزادی در بحران&nbsp;</span>
+                
+            </div>
+            <div class="session-body">
+
+
+                <div class="topic" id="t-3-1">
+                    <div class="topic-title">📌 مقدمه — آزادی به‌عنوان یک سؤال سنگین در بحران
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=0" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:00:00 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>در روزهای عادی، <strong>آزادی</strong> واژه زیبایی است؛ شبیه یک امتیاز، شبیه چیزی که درباره‌اش حرف می‌زنیم اما لازم نیست هر روز به آن فکر کنیم. اما در <strong>بحران</strong>، آزادی دیگر یک مفهوم انتزاعی نیست؛ آزادی به یک <strong>سؤال سنگین</strong> تبدیل می‌شود.</li><li>وقتی اقتصاد ناپایدار است، وقتی آینده مه‌آلود است، وقتی محدودیت‌ها واقعی‌اند و وقتی انتخاب‌ها کم می‌شوند، یک جمله آرام در ذهن ما شکل می‌گیرد: «من چه انتخابی دارم؟» و حتی گاهی تلخ‌تر می‌شود: «اصلاً انتخابی دارم؟»</li><li>این اپیزود قرار نیست چیزی را <strong>ساده‌سازی</strong> کند. قرار نیست بگوید تو همیشه آزادی کاملی داری. چون واقعیت این است که در بحران، <strong>آزادی بیرونی</strong> کوچک می‌شود.</li><li>اما سؤال اصلی جای دیگری است: <strong>اگر بیرون محدود است، اگر نمی‌توانم شرایط را عوض کنم، آیا هنوز می‌توانم نسبت خودم را با شرایط انتخاب کنم؟</strong></li><li><strong>آزادی در دل بحران</strong> هر جایی که می‌خواهیم نیست. آزادی در دل بحران یعنی تصمیم بگیرم <strong>چگونه انسانی باشم</strong>.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مفهوم کلیدی این بخش</strong>: تمایز بین <strong>آزادی بیرونی</strong> (امکان انتخاب شرایط) و <strong>آزادی درونی</strong> (توان انتخاب نسبت خود با شرایط). این تمایز ستون فقرات تمام بحث این جلسه است.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-2">
+                    <div class="topic-title">📌 پارادوکس آزادی — سبکی و سنگینی همزمان
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=71" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:01:11 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>آزادی یک <strong>پارادوکس</strong> است. هر سبکی از داستانی که در مسیر زندگی ماست، هم می‌تواند <strong>سبک</strong> باشد و هم <strong>سنگین</strong>.</li><li><strong>سبک</strong> است به دلیل اینکه در آن امکان انتخاب وجود دارد. <strong>سنگین</strong> است چون <strong>مسئولیت</strong> همراه دارد.</li><li>خیلی وقت‌ها در بحران، <strong>نداشتن انتخاب</strong> راحت‌تر است. چون وقتی انتخابی نباشد، مسئولیتی هم نیست. اگر همه چیز بیرونی باشد، درونمان آرام است — حداقل به‌صورت موقت.</li><li>اما این آرامش <strong>بهای بزرگی</strong> دارد: بهایش <strong>از دست دادن عاملیت</strong> ماست. بهایش <strong>از دست دادن صدای درون</strong> ماست. بهایش تبدیل شدن به کسی است که فقط <strong>واکنش</strong> نشان می‌دهد.</li><li><strong>آزادی در بحران</strong> یعنی بازپس گرفتن یک قلم — قلمی که شاید نتواند داستان جهان را بنویسد، اما هنوز می‌تواند جمله‌هایی را برای زندگی من، برای خودش، در مسیر زندگی من بنویسد.</li><li>این اپیزود درباره <strong>قهرمان بودن</strong> نیست، درباره <strong>کنترل همه چیز</strong> نیست. درباره یک <strong>حوزه کوچک</strong> است — اما جایی که هنوز به تو تعلق دارد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>پارادوکس آزادی</strong>: آزادی هم رهایی‌بخش است و هم اضطراب‌آور. هرچه آزادی بیشتری داشته باشیم، مسئولیت بیشتری نیز بر دوش ماست. این پارادوکس در بحران تشدید می‌شود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-3">
+                    <div class="topic-title">📌 شروع صادقانه — وقتی «تو همیشه انتخاب داری» شبیه یک شوخی تلخ است
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=222" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:03:42 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>وقتی در بحران زندگی می‌کنیم، وقتی فشار اقتصادی واقعی می‌شود، وقتی محدودیت‌های اجتماعی واقعی می‌شود، وقتی آینده پیش‌بینی‌پذیر نیست — جمله <strong>«تو همیشه انتخاب داری»</strong> گاهی شبیه یک <strong>شوخی تلخ</strong> به نظر می‌رسد. یا حتی بدتر: شبیه <strong>بی‌انصافی</strong>.</li><li>چون واقعیت این است که در بحران، <strong>انتخاب‌های بیرونی واقعاً کم می‌شوند</strong>. نمی‌توانی هر شغلی را انتخاب کنی، نمی‌توانی هر کشوری را انتخاب کنی، نمی‌توانی هر سبک زندگی را انتخاب کنی. حتی نمی‌توانی آینده‌ات را تضمین کنی.</li><li>پس اگر کسی بگوید «همیشه آزادی»، اولین واکنش طبیعی این است: «خب نه، ندارم.» و این واکنش <strong>واقعی</strong> است. ما نباید آن را انکار کنیم.</li><li>این اپیزود قرار نیست درک را با فلسفه پاک کند. قرار نیست محدودیت را انکار کند. قرار نیست بگوید همه چیز در ذهن توست. <strong>نه، محدودیت واقعی است.</strong></li><li>اما حالا یک <strong>لایه عمیق‌تر</strong> وجود دارد: وقتی می‌گوییم «انتخاب ندارم»، دقیقاً درباره چه چیزی حرف می‌زنیم؟ درباره <strong>نتیجه</strong>؟ درباره <strong>مسیر</strong>؟ درباره <strong>شرایط</strong>؟ یا درباره <strong>بحران</strong>؟</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>نکته مهم</strong>: انکار محدودیت‌های بیرونی، خودش یک نوع بی‌انصافی است. هدف این جلسه <strong>انکار واقعیت</strong> نیست، بلکه <strong>دیدن لایه‌های عمیق‌تر</strong> در کنار پذیرش واقعیت است.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-4">
+                    <div class="topic-title">📌 تفاوت حیاتی «کنترل نداشتن» و «انتخاب نداشتن»
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=301" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:05:01 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>یک کار خطرناک همیشه مرز بین <strong>کنترل نداشتن</strong> و <strong>انتخاب نداشتن</strong> را حذف می‌کند. این دو لغت را خیلی عمیق باید بررسی کرد: <strong>کنترل نداشتن</strong> و <strong>انتخاب نداشتن</strong>.</li><li><strong>این دو یکی نیستند.</strong> تو ممکن است کنترل نداشته باشی، اما آیا واقعاً هیچ انتخابی نداری؟</li><li>دو مفهوم جذاب در زندگی همه ما انسان‌ها وجود دارد: یکی <strong>آزادی بیرونی</strong> و دیگری <strong>آزادی درونی</strong>.</li><li><strong>آزادی بیرونی</strong> یعنی اینکه بتوانیم جابجا شویم، انتخاب کنیم، امکانات داشته باشیم، گزینه‌های متنوع داشته باشیم. در بحران، این نوع آزادی واقعاً کوچک می‌شود.</li><li><strong>آزادی درونی</strong> یعنی <strong>توان انتخاب نسبت خودت با آنچه هست</strong>. این جمله شاید ساده به نظر برسد، اما اگر درست فهمیده شود، سنگین است.</li><li>فرض کن شرایط تغییر نکند. فرض کن درآمد ثابت بماند. فرض کن فشار اجتماعی کم نشود. در این شرایط، <strong>امکان درونی</strong> داری که یک تلخ شدن را تجربه کنی، یا یک بی‌حس شدن را تجربه کنی، یا <strong>آگاهانه انتخاب کنی که چگونه باشی</strong>.</li><li>مشکل اینجاست که ما آزادی را فقط در <strong>سطح بیرون</strong> تعریف کرده‌ایم. وقتی بیرون بسته می‌شود، خیال می‌کنیم همه چیز بسته شده است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این تمایز شبیه تمایز بین <strong>Freedom from</strong> (آزادی از موانع بیرونی) و <strong>Freedom to</strong> (آزادی برای بودن و انتخاب کردن) است. در بحران، نوع اول محدود می‌شود اما نوع دوم می‌تواند حفظ شود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-5">
+                    <div class="topic-title">📌 چرا نداشتن انتخاب گاهی امن‌تر به نظر می‌رسد؟ — پناهگاه روانی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=407" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:06:47 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>چرا <strong>نداشتن انتخاب</strong> گاهی <strong>امن‌تر</strong> به نظر می‌رسد؟ اینجاست که یک نکته روانشناختی بسیار مهم وجود دارد.</li><li>وقتی بگویی «من انتخابی ندارم» یا «اتفاقی افتاد»، <strong>مسئولیت سبک می‌شود</strong>. اگر انتخابی نباشد، خطایی هم نیست. اگر اختیاری نباشد، پشیمانی هم نیست.</li><li><strong>نداشتن انتخاب گاهی یک پناهگاه روانی است</strong> — پناهگاهی که می‌گوید همه چیز بیرون از من است و من قربانی داستان هستم.</li><li>دوباره تأکید می‌کنم: در بحران، <strong>آسیب واقعی است</strong>. <strong>بی‌عدالتی واقعی است</strong>. حتی <strong>فشار هم واقعی است</strong>.</li><li>اما بین <strong>آسیب دیدن</strong> و <strong>هویت قربانی</strong> یک <strong>فاصله عمیق</strong> وجود دارد. وقتی هویت قربانی شکل بگیرد، انسان کم‌کم از خودش هم فاصله می‌گیرد. دیگر نمی‌پرسد «من چی می‌خواهم؟»، «من چه ارزشی دارم؟»، «من چگونه می‌خواهم؟». فقط می‌پرسد «چرا اینطوری شد؟»</li><li>این سؤال اگرچه <strong>مشروع</strong> است، اما اگر <strong>تنها سؤال</strong> باقی بماند، آزادی درونی ما را هم خاموش می‌کند — آزادی‌ای که هیچ‌کس نمی‌تواند از ما بگیرد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>هشدار مهم</strong>: قرار نیست مطالبه آزادی بیرونی را فراموش کنیم. اما بدون آزادی درونی، مطالبه آزادی بیرونی هم می‌تواند به یک داستان تکراری و بی‌اثر تبدیل شود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-6">
+                    <div class="topic-title">📌 آزادی به‌عنوان پاسخ — بازتعریف آزادی در بحران
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=531" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:08:51 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>آزادی در زندگی خیلی وقت‌ها <strong>به‌عنوان پاسخ</strong> وجود دارد، نه به‌صورت <strong>امکان</strong>. شاید لازم باشد تعریف آزادی را با همدیگر یک بار <strong>عوض کنیم</strong>.</li><li>در بحران، آزادی کمتر درباره <strong>امکان‌های زیاد</strong> است و بیشتر درباره <strong>پاسخ‌های ما</strong>.</li><li>در شرایطی که شاید نتوانیم تصمیم بگیریم <strong>کجا ایستاده‌ایم</strong>، اما هنوز می‌توانیم تصمیم بگیریم <strong>چگونه آنجا ایستادن</strong> را تجربه کنیم.</li><li>این تفاوت خیلی <strong>ظریف</strong> است، اما خیلی <strong>سرنوشت‌ساز</strong> است. دو نفر ممکن است در شرایط تقریباً مشابه باشند — هر دو محدود، هر دو تحت فشار. یکی <strong>تلخ</strong> می‌شود، یکی <strong>بی‌حس</strong> می‌شود، یکی <strong>حساس و انسانی</strong> می‌ماند.</li><li>شرایط یکسان نیستند، اما حتی اگر نزدیک هم باشند، <strong>تفاوت در پاسخ</strong> است. و پاسخ هنوز <strong>قلمرویی از آزادی</strong> به ما می‌دهد.</li><li>برای همین می‌گویم <strong>آزادی کوچک</strong> خیلی وقت‌ها از خیلی از <strong>توهم‌های آزادی</strong> برای ما مهم‌تر و واقعی‌تر است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مثال عملی</strong>: در شرایط بحران شاید نتوانیم نرخ تورم را عوض کنیم، شاید نتوانیم سیاست را تغییر دهیم، شاید نتوانیم آینده را تضمین کنیم — اما می‌توانیم تصمیم بگیریم چقدر خبر مصرف کنیم، چقدر قضاوت در گفتگوها اضافه کنیم، بی‌احترامی را حذف کنیم، از بدنمان مراقبت کنیم، یک مهارت کوچک یاد بگیریم، یک رابطه را حفظ کنیم، یا تلخی را بازتولید نکنیم.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-7">
+                    <div class="topic-title">📌 آیا بخشی از ما به نداشتن انتخاب عادت کرده است؟
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=668" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:11:08 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>یک سؤال سخت وجود دارد که باید بپرسم — نه برای <strong>سرزنش</strong>، بلکه برای <strong>بیداری</strong>: <strong>آیا ممکن است بخشی از ما به نداشتن انتخاب عادت کرده باشد؟</strong></li><li>چون نداشتن انتخاب از ما <strong>انتظار رشد</strong> نمی‌خواهد، <strong>شجاعت</strong> نمی‌خواهد، <strong>تصمیم سخت</strong> نمی‌خواهد. اما انتخاب — حتی کوچک — <strong>هزینه</strong> دارد.</li><li><strong>انتخاب یعنی من مسئول کیفیت حضورم هستم.</strong> و این جمله خیلی سنگین است.</li><li>حقیقت این است که در بحران، <strong>آزادی بیرونی کم می‌شود</strong> — این انکارناپذیرترین موضوع موجود در بحرانی است که ما داریم زندگی می‌کنیم. اما اگر <strong>آزادی درونی</strong> را هم واگذار کنیم، باران فقط شرایط ما را نگرفته؛ <strong>خود ما را هم گرفته</strong>.</li><li>پس شاید آزادی در بحران این نباشد که بگوییم «من هر کاری می‌توانم بکنم». شاید آزادی در بحران این باشد که بگوییم: <strong>«شرایط سخت است، اما من هنوز تصمیم می‌گیرم که چگونه انسانی باشم.»</strong></li><li>و این <strong>آغاز بازپسگیری قلم</strong> است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این پدیده در روانشناسی به <strong>Learned Helplessness</strong> (درماندگی آموخته‌شده) شباهت دارد — حالتی که فرد پس از تجربه مکرر ناتوانی، حتی وقتی شرایط تغییر می‌کند، همچنان خود را ناتوان می‌بیند.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-8">
+                    <div class="topic-title">📌 بخش دوم: سنگینی مسئولیت — چرا آزادی در بحران اضطراب‌آور است؟
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=805" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:13:25 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>گفتیم که در بحران، <strong>آزادی بیرونی کوچک می‌شود</strong> اما <strong>آزادی درونی حذف نمی‌شود</strong>. حالا باید با یک حقیقت دیگر هم روبرو شویم: <strong>آزادی همیشه حس خوبی ندارد.</strong></li><li>ما معمولاً آزادی را با <strong>سبکی، رهایی و راحتی</strong> تداعی می‌کنیم. اما در واقعیت زیسته، آزادی یک <strong>روی دیگر</strong> هم دارد: <strong>سنگینی</strong>.</li><li>چون <strong>هرجا آزادی هست، مسئولیت هم هست</strong> — و مسئولیت در بحران گاهی از خود بحران هم سنگین‌تر به نظر می‌رسد.</li><li><strong>چرا مسئولیت آدم‌ها را می‌ترساند؟</strong> به‌بیان ساده: وقتی شرایط سخت است، وقتی آینده مبهم است، وقتی نتیجه‌ها تضمین‌شده نیستند — <strong>انتخاب کردن خطرناک است</strong>. چرا؟ چون اگر انتخاب کنی و نتیجه خوبی نباشد، پس باید با پیامدش زندگی کنی.</li><li>اما اگر بگویی «خب چاره‌ای نبود»، اگر بگویی «انتخابی نداشتم» — بخشی از <strong>بار روانی</strong> تو سبک‌تر می‌شود.</li><li>برای همین باید بدانیم در بحران، انسان‌ها فقط از <strong>محدودیت</strong> نمی‌ترسند؛ از <strong>اشتباه کردن در محدودیت</strong> خیلی بیشتر می‌ترسند. از اینکه در شرایط سخت تصمیم اشتباه بگیریم و هزینه‌اش سنگین باشد.</li><li>اینجاست که <strong>آزادی تبدیل به یک اضطراب</strong> می‌شود.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مفهوم کلیدی</strong>: آزادی و مسئولیت دو روی یک سکه‌اند. هرچه آزادی بیشتر باشد، مسئولیت بیشتر است. در بحران، چون هزینه اشتباه بالاست، این مسئولیت اضطراب‌آورتر می‌شود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-9">
+                    <div class="topic-title">📌 آزادی یعنی نبود تضمین — عدم تضمین نتیجه
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=934" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:15:34 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>یکی از <strong>دردناک‌ترین جنبه‌های آزادی</strong> این است که آزادی <strong>هیچ تضمینی نمی‌دهد</strong>. تو می‌توانی بهترین نیت را داشته باشی، بهترین تحلیل را داشته باشی، با ارزش‌های زیبای خودت هماهنگ باشی — و باز هم نتیجه طبق انتظار پیش نرود.</li><li>در شرایط عادی، این <strong>عدم تضمین</strong> قابل تحمل‌تر است. اما در بحران، وقتی هر اشتباه ممکن است <strong>پرهزینه</strong> باشد، آزادی بیشتر شبیه <strong>خطر</strong> می‌شود تا <strong>فرصت</strong>.</li><li>و همین‌جاست که بعضی‌ها ترجیح می‌دهند <strong>تصمیم نگیرند</strong>. تصمیم نگرفتن هم یک <strong>انتخاب</strong> است — اما انتخابی که مسئولیتش خیلی وقت‌ها <strong>پنهان</strong> می‌شود.</li><li><strong>اضطراب آزادی</strong> فقط اضطراب اقتصادی یا اجتماعی نیست. یک <strong>لایه عمیق‌تر</strong> هم دارد: اضطراب اینکه <strong>من تنها مسئول زندگی خودم هستم</strong>.</li><li>این جمله ساده نیست. وقتی قبول می‌کنی که حتی در فضای محدودیت‌ها، باز هم <strong>نحوه پاسخ دادن توست</strong> — با یک <strong>خلأ عجیب</strong> روبرو می‌شوی.</li><li>یعنی: <strong>هیچ نسخه آماده‌ای وجود ندارد</strong>. هیچ تضمین بیرونی هم وجود ندارد. هیچ‌کس نمی‌تواند به جای تو تصمیم بگیرد.</li><li>این همان جایی است که <strong>آزادی با تنهایی</strong> گره می‌خورد. تو آزادی، اما باید با پیامدهایش با خودت بایستی. با پیامد تنهایی‌اش کنار بیایی — و این تنهایی خیلی وقت‌ها <strong>اضطراب‌آور</strong> است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این مفهوم در فلسفه اگزیستانسیالیسم (به‌ویژه در آثار ژان-پل سارتر) با عنوان «محکوم به آزادی» شناخته می‌شود — انسان محکوم است آزاد باشد و مسئولیت انتخاب‌های خود را بپذیرد.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-10">
+                    <div class="topic-title">📌 مسئولیت در بحران — سنگین‌تر از همیشه
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1068" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:17:48 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>در شرایط عادی، اشتباه‌ها، انتخاب‌ها، ایستادن‌ها در جاهایی که باید یا نباید — معمولاً <strong>قابل جبران</strong> هستند.</li><li>اما در بحران، اشتباه ممکن است <strong>هزینه مالی سنگینی</strong> داشته باشد، <strong>رابطه‌ای را متزلزل</strong> کند، <strong>امنیتی را به خطر</strong> بیندازد، یا حتی <strong>فرصت محدودی</strong> که داریم را از بین ببرد.</li><li>پس طبیعی است که ذهن به ما بگوید: بهتر است تصمیم نگیرم، بهتر است صبر کنم، بهتر است شرایط روشن‌تر شود.</li><li>اما بحران یک ویژگی دارد: <strong>خیلی وقت‌ها روشن‌تر نمی‌شود</strong>. و اگر انسان در حالت <strong>تعلیق</strong> بماند، زندگی تبدیل می‌شود به <strong>انتظار</strong> — انتظاری طولانی و فرسوده‌کننده که از خود تصمیم هم <strong>فرسوده‌تر</strong> است.</li><li>اینجاست که یک <strong>خطر جدی</strong> وجود دارد: وقتی درباره مسئولیت حرف می‌زنیم، خیلی‌ها سریع وارد <strong>سرزنش خود</strong> می‌شوند: «اگر بهتر تصمیم می‌گرفتم، اگر شجاع‌تر بودم، اگر زودتر اقدام کرده بودم...»</li><li>اما <strong>مسئولیت بالغ</strong> با <strong>خودتنبیهی</strong> فرق دارد. مسئولیت یعنی «من می‌پذیرم که انتخاب‌هایم اثر دارد». خودتنبیهی یعنی «من خودم را به خاطر هر نتیجه ناخوشایندی نابود می‌کنم».</li><li>باید این دو را از هم جدا کنیم: <strong>مسئولیت</strong> یعنی تو مسئول <strong>پاسخ‌هایت</strong> هستی، اما <strong>مسئول همه نتایج که نیستی</strong>.</li><li><strong>بین کنترل کامل و بی‌اختیاری کامل، یک منطقه میانی همیشه وجود دارد — و آزادی دقیقاً در همان منطقه زندگی می‌کند.</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مثال کاربردی</strong>: در یک تصمیم مالی، بازار تغییر کرده و نتیجه طبق انتظار نیست. مسئولیت سالم می‌گوید: «تصمیم من بخشی از ماجرا بود؛ می‌توانم بازبینی کنم، یاد بگیرم، اصلاح کنم.» اما خودتخریب‌گری می‌گوید: «من همیشه اشتباه می‌کنم، من بلد نیستم، من ضعیفم.»</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-11">
+                    <div class="topic-title">📌 چرا بعضی‌ها از آزادی فرار می‌کنند؟
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1191" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:19:51 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>چرا بعضی‌ها از آزادی فرار می‌کنند؟</strong> چون آزادی یعنی: «من نمی‌توانم همه چیز را به گردن شرایط بیندازم. من باید بپذیرم که هنوز سهمی دارم. من باید جرات کنم تصمیم بگیرم — حتی اگر کامل نباشد.»</li><li>این <strong>جرات</strong> انرژی می‌خواهد. و در بحران، <strong>انرژی کم است</strong>. پس طبیعی است که انسان گاهی بخواهد از این بار <strong>فرار</strong> کند.</li><li>اما نکته اینجاست که <strong>فرار از مسئولیت در کوتاه‌مدت آرامش می‌دهد</strong>، اما <strong>در بلندمدت به ما بی‌قدرتی می‌دهد</strong>. و <strong>بی‌قدرتی مزمن</strong>، <strong>فرسودگی عمیق‌تری</strong> تولید می‌کند.</li><li>بسیاری از انسان‌ها این روزها درگیر <strong>بی‌قدرتی مزمن</strong> شده‌اند و دچار <strong>فرسودگی عمیق</strong> شده‌اند — و این را هر روز دارند تولید می‌کنند.</li><li>برای همین، یک سؤال سه‌کلمه‌ای از همه باید بپرسیم: <strong>آزادی بالغ یعنی چه؟</strong></li><li><strong>آزادی بالغ یعنی</strong>: «من نمی‌توانم همه چیز را انتخاب کنم، اما می‌توانم <strong>کیفیت انتخاب‌هایم</strong> را انتخاب کنم.»</li><li><strong>کیفیت یعنی چه؟</strong> یعنی: آیا از روی <strong>ترس</strong> تصمیم می‌گیرم یا از روی <strong>ارزش</strong>؟ آیا از روی <strong>خشم</strong> واکنش نشان می‌دهم یا از روی <strong>آگاهی</strong>؟ آیا از روی <strong>ناامیدی</strong> تسلیم می‌شوم یا از روی <strong>واقع‌گرایی</strong> دارم فضای زندگی‌ام را بازطراحی می‌کنم؟</li><li>آزادی بالغ <strong>کامل نیست</strong>، <strong>جسورانه هم نیست همیشه</strong> — اما آزادی بالغ خیلی <strong>صادق</strong> است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: «آزادی بالغ» مفهومی است که در روانشناسی رشد و فلسفه اخلاق مطرح می‌شود — توانایی پذیرش محدودیت‌ها بدون رها کردن مسئولیت انتخاب‌های خود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-12">
+                    <div class="topic-title">📌 بخش سوم: قربانی بودن به‌عنوان پناهگاه روانی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1386" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:23:06 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>بیایید با همدیگر کمی <strong>صادق</strong> باشیم. در بحران، <strong>احساس بی‌قدرتی واقعی</strong> است. وقتی تصمیم‌ها بیرون از تو گرفته می‌شود، وقتی شرایط اقتصادی و اجتماعی از اختیار تو خارج است، وقتی تلاش‌ها همیشه نتیجه مناسب نمی‌دهد — <strong>احساس ناتوانی</strong> طبیعی است.</li><li>پس اگر امروز کسی بگوید «من واقعاً دستم بسته است»، نباید با فلسفه با او <strong>حمله</strong> کرد. اینجا یک <strong>نقطه ظریف و خطرناک</strong> وجود دارد: <strong>بین احساس بی‌قدرتی و هویت قربانی، یک فاصله عمیق است.</strong></li><li>اگر این فاصله دیده نشود، انسان آرام‌آرام از درون <strong>فرو می‌ریزد</strong>.</li><li>باید <strong>احساس بی‌قدرتی</strong> را <strong>به رسمیت بشناسیم</strong> — این یک رکن بسیار مهم است. اما نباید احساس بی‌قدرتی را به سمت <strong>هویت قربانی</strong> ببریم.</li><li><strong>قربانی بودن در سطح واقعیت</strong> یعنی <strong>آسیب دیدن</strong> — و آسیب دیدن در بحران <strong>انکارناپذیر</strong> است.</li><li>اما <strong>هویت قربانی</strong> چیز دیگری است: یعنی «من هیچ سهمی در روایت زندگی‌ام ندارم، همه چیز بیرون است، من فقط و فقط نتیجه‌ام.»</li><li>در این وضعیت سه اتفاق می‌افتد: ۱) <strong>اختیار کوچک دیده نمی‌شود</strong>، ۲) <strong>مسئولیت به طور کامل واگذار می‌شود</strong>، ۳) <strong>خشم یا بی‌حسی تبدیل به سبک زندگی می‌شود</strong>.</li><li>و اینجا <strong>خطر</strong> دارد شروع می‌شود.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>تمایز حیاتی</strong>: درد واقعی و آسیب دیدن انکارناپذیرند، اما <strong>هویت قربانی</strong> تا حد زیادی <strong>انتخابی</strong> است. این تفاوت کوچک در روایت، تفاوت بزرگی در آینده ما می‌سازد.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-13">
+                    <div class="topic-title">📌 چرا قربانی بودن جذاب است؟ — سه مزیت روانی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1517" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:25:17 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>چرا قربانی بودن جذاب است؟</strong> چرا ذهن گاهی به این هویت <strong>پناه می‌برد</strong>؟ چون قربانی بودن <strong>سه مزیت روانی</strong> دارد:</li><li><strong>مزیت اول — کاهش مسئولیت</strong>: اگر من فقط قربانی باشم، نیازی نیست تصمیم سخت بگیرم. اگر هیچ سهمی نداشته باشم، هیچ خطایی هم ندارم. این <strong>سبک‌تر</strong> است — حداقل موقت.</li><li><strong>مزیت دوم — مشروعیت خشم</strong>: وقتی خودت را کاملاً قربانی می‌دانی، <strong>خشم</strong> در تو <strong>توجیه‌پذیر</strong> می‌شود. و خشم در بحران <strong>انرژی</strong> می‌دهد — حتی اگر مخرب باشد.</li><li><strong>مزیت سوم — همدلی گرفتن (آغوش)</strong>: هویت قربانی معمولاً <strong>همدلی</strong> و <strong>همدردی</strong> می‌آورد. و در زمانه سخت، <strong>دیده شدن</strong> یک نیاز عمیق است.</li><li>پس قربانی بودن همیشه از <strong>ضعف</strong> نمی‌آید. گاهی از <strong>خستگی</strong> می‌آید، گاهی از <strong>نیاز به دیده شدن</strong>، گاهی از <strong>مشروع کردن خشم</strong>.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این سه مزیت توضیح می‌دهند چرا رها کردن هویت قربانی دشوار است — زیرا این هویت نیازهای واقعی روانی را برآورده می‌کند، هرچند به قیمت از دست دادن عاملیت.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-14">
+                    <div class="topic-title">📌 سه هزینه پنهان هویت قربانی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1605" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:26:45 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>این وسط یک سری <strong>هزینه‌های پنهان</strong> هم در هویت قربانی وجود دارد. اگر قربانی بودن <strong>موقت</strong> باشد، می‌توانیم آن را به‌عنوان <strong>مرحله‌ای از سوگ یا تطبیق</strong> در تجربه زندگی‌مان بپذیریم. اما اگر تبدیل به <strong>هویت پایدار</strong> ما شود، <strong>سه هزینه عمیق</strong> دارد:</li><li><strong>هزینه اول — از دست دادن عاملیت</strong>: عاملیت یعنی احساس درونی که «من هنوز می‌توانم اثر بگذارم». وقتی این احساس خاموش می‌شود، انسان فقط <strong>واکنش</strong> نشان می‌دهد، دیگر <strong>خلق</strong> نمی‌کند. و این خاموشی <strong>آهسته‌آهسته</strong> پیش می‌رود.</li><li><strong>هزینه دوم — تحلیل رفتن کرامت</strong>: وقتی خودت را فقط قربانی ببینی، کم‌کم به این باور می‌رسی که «من توان ساختن ندارم» — و این باور <strong>خطرناک‌تر از خود بحران</strong> است.</li><li><strong>هزینه سوم — تکرار چرخه بی‌قدرتی</strong>: هویت قربانی معمولاً رفتارهایی می‌سازد که همان بی‌قدرتی را <strong>بازتولید</strong> می‌کند: تعویق، بی‌تصمیمی، کناره‌گیری، یا حتی تخریب رابطه‌ها. و بعد نتیجه، دوباره حس بی‌قدرتی را <strong>تأیید</strong> می‌کند. و این یک <strong>چرخه بی‌پایان</strong> است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>نکته مهم</strong>: عبور از هویت قربانی با <strong>انکار</strong> شروع نمی‌شود، با <strong>پذیرش</strong> شروع می‌شود. پذیرش یعنی: «بله، شرایط سخت است. بله، من آسیب دیدم. بله، محدودیت وجود دارد.» این‌ها را نمی‌خواهیم ساده‌سازی کنیم.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-15">
+                    <div class="topic-title">📌 عبور از قربانی بودن — تغییر زبان و تمرین دو ستون
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1740" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:29:00 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>بزرگترین اشتباه</strong> این است که به کسی بخواهیم بگوییم «قربانی نباش». این جمله به‌ذاته <strong>خشونت‌آمیز</strong> است. عبور از هویت قربانی با <strong>انکار</strong> شروع نمی‌شود، با <strong>پذیرش</strong> شروع می‌شود.</li><li>اما می‌خواهیم یک <strong>سؤال عمیق</strong> بپرسیم: «اوکی، در این شرایط <strong>سهم من چیه</strong>؟» — نه در <strong>تقصیر</strong>، بلکه در <strong>پاسخ</strong>. این سؤال هویت را جابجا می‌کند.</li><li>گاهی عبور از قربانی بودن فقط با <strong>تغییر زبان</strong> شروع می‌شود. به جای «هیچ کاری از دستم برنمی‌آید»، بگوییم «کارهای زیادی از دستم برنمی‌آید، <strong>اما این یکی از دستم می‌آید</strong>». این «اما»ی کوچک، <strong>دروازه عاملیت</strong> ماست.</li><li><strong>تمرین ساده اما عمیق</strong>: از امشب یا هر زمانی که این اپیزود را می‌شنوی، یک کاغذ بردار و <strong>دو ستون</strong> بکش:</li><li>  - <strong>ستون اول</strong>: چیزهایی که واقعاً خارج از کنترل من هستند (بی‌رحمانه صادق باش).</li><li>  - <strong>ستون دوم</strong>: چیزهایی که هنوز — حتی کوچک — می‌توانم رویشان تأثیر بگذارم و قابل انتخاب هستند.</li><li>شاید کم باشند، شاید کوچک باشند، اما <strong>واقعی</strong> هستند. و بعد از خودت بپرس: <strong>اگر فقط روی ستون دوم زندگی کنم، زندگی‌ام چه تغییری خواهد کرد؟</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این تمرین برگرفته از مفهوم <strong>دایره نفوذ (Circle of Influence)</strong> در کتاب «۷ عادت مردمان مؤثر» نوشته استیون کاوی است — تمرکز بر آنچه می‌توانیم کنترل کنیم، به جای تمرکز بر آنچه خارج از کنترل ماست.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-16">
+                    <div class="topic-title">📌 بخش چهارم: چه چیزی هنوز مال من است؟ — قلمروهای آزادی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=1922" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:32:02 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>تا اینجا دیدیم که اگر <strong>آزادی بیرونی کوچک</strong> شود، <strong>مسئولیت سنگین</strong> می‌شود و <strong>قربانی بودن</strong> می‌تواند یک <strong>پناهگاه روانی</strong> باشد.</li><li>اما حالا باید به <strong>قلب موضوع</strong> برویم: در دل بحران، در هرگونه محدودیتی که هست، در فشارهای واقعی — <strong>چه چیزهایی هنوز به من، به تو، به ما تعلق دارد؟</strong></li><li>اگر قرار باشد آزادی را فقط در <strong>بیرون</strong> تعریف کنیم، تقریباً <strong>همه چیز از دست رفته</strong> به نظر می‌رسد. اما اگر <strong>دقیق‌تر</strong> نگاه کنیم، می‌بینیم هنوز <strong>قلمروهایی</strong> وجود دارند که بحران نمی‌تواند به آن‌ها وارد شود — <strong>مگر اینکه خودمان بخواهیم واگذار کنیم</strong>.</li><li>این <strong>شش قلمرو</strong> عبارتند از:</li><li>  - <strong>قلمرو اول — تفسیر</strong>: تو نمی‌توانی همیشه <strong>رویدادها</strong> را انتخاب کنی، اما هنوز می‌توانی <strong>تفسیرت</strong> را انتخاب کنی.</li><li>  - <strong>قلمرو دوم — پاسخ</strong>: بین <strong>انتخاب</strong> و <strong>واکنش</strong> یک فاصله وجود دارد. در دل همان فاصله، آزادی زندگی می‌کند.</li><li>  - <strong>قلمرو سوم — ارزش‌ها</strong>: در بحران، ارزش‌ها تبدیل به <strong>قطب‌نمای درونی</strong> ما می‌شوند.</li><li>  - <strong>قلمرو چهارم — مرزها</strong>: تو می‌توانی <strong>مرز بگذاری</strong> — با آگاهی، با کرامت.</li><li>  - <strong>قلمرو پنجم — توجه</strong>: جایی که <strong>توجه</strong> می‌رود، <strong>زندگی</strong> می‌رود. تو هنوز می‌توانی انتخاب کنی به چه چیزی توجه کنی.</li><li>  - <strong>قلمرو ششم — روایت</strong>: بحران می‌تواند بخشی از داستان تو باشد، اما لازم نیست <strong>تمام داستان</strong> باشد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>تعریف آزادی در بحران</strong>: <strong>بازپسگیری آنچه هنوز مال توست</strong> — نه کشور، نه اقتصاد، نه آینده (که تضمین‌شده باشد)، بلکه <strong>تفسیر، پاسخ، ارزش‌ها، مرزها، توجه و روایت</strong>.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-17" style="transition: background 0.3s;">
+                    <div class="topic-title">📌 قلمرو اول: تفسیر — معنایی که به رویدادها می‌دهیم
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2019" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:33:39 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو اول تفسیر است.</strong> تو نمی‌توانی همیشه <strong>رویدادها</strong> را انتخاب کنی، اما هنوز می‌توانی <strong>تفسیرت</strong> را انتخاب کنی.</li><li>یک اتفاق واحد می‌تواند <strong>دو روایت</strong> در دل خودش داشته باشد. مثلاً یک <strong>شکست مالی</strong>:</li><li>  - <strong>روایت اول</strong>: «همیشه بدشانسی می‌آورم. زندگی علیه من است. من خیلی بدبختم.»</li><li>  - <strong>روایت دوم</strong>: «این شکست واقعی درد دارد، اما باید ببینم چه چیزی می‌توانم از آن یاد بگیرم.»</li><li><strong>اتفاق یکی است، اما معنایی که به آن می‌دهیم فرق دارد.</strong> بحران می‌تواند <strong>شرایط</strong> را بسازد، اما <strong>معنا</strong>ی آن را تو داری می‌سازی.</li><li><strong>معنا جهت زندگی را تعیین می‌کند.</strong> اگر تفسیر تو فقط <strong>تاریکی</strong> باشد، زندگی در تاریکی حرکت می‌کند. اگر تفسیرت <strong>واقع‌گرایانه اما فعال</strong> باشد، حتی در دل سختی‌ها هم می‌توانیم <strong>معنا</strong> بدهیم و <strong>انتخاب</strong> کنیم.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این مفهوم در روانشناسی <strong>بازسازی شناختی (Cognitive Reframing)</strong> نامیده می‌شود — فرآیند تغییر معنای یک رویداد برای تغییر پاسخ هیجانی و رفتاری به آن.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-18">
+                    <div class="topic-title">📌 قلمرو دوم: پاسخ — فاصله بین محرک و واکنش
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2083" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:34:43 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو دوم پاسخ است.</strong> بین <strong>انتخاب</strong> و <strong>واکنش</strong> یک فاصله عجیب و غریب وجود دارد. این فاصله همیشه بزرگ نیست — گاهی فقط چند ثانیه است، گاهی حتی کمتر.</li><li><strong>در دل همان فاصله، آزادی وجود دارد — آزادی دارد زندگی می‌کند.</strong></li><li>تو نمی‌توانی مانع همه فشارها شوی، اما می‌توانی تصمیم بگیری <strong>چطور پاسخ دهی</strong>:</li><li>  - می‌توانی <strong>تحقیر</strong> کنی یا <strong>مکث</strong> کنی.</li><li>  - می‌توانی در ناامیدی <strong>فرو بروی</strong> و داستان زندگی‌ات را <strong>نادیده بگیری</strong> — یا <strong>کمک</strong> بگیری.</li><li>  - می‌توانی <strong>انکار</strong> کنی یا <strong>واقعیت</strong> را بپذیری.</li><li><strong>پاسخ، شخصیت را می‌سازد — و شخصیت، آینده را شکل می‌دهد.</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این مفهوم برگرفته از جمله معروف ویکتور فرانکل است: «بین محرک و پاسخ، یک فاصله وجود دارد. در آن فاصله، قدرت انتخاب ما نهفته است.»</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-19">
+                    <div class="topic-title">📌 قلمرو سوم: ارزش‌ها — قطب‌نمای درونی در بحران
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2129" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:35:29 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو سوم، قلمرو ارزش‌هاست.</strong> ارزش‌ها در بحران خیلی <strong>جدی‌تر</strong> می‌شوند.</li><li>در زمانه‌ای که آرام است، همه چیز — از جمله ارزش‌ها — گاهی کمی <strong>لوکس و لاکچری</strong> به نظر می‌رسد. اما در بحران، <strong>ارزش‌ها تبدیل به قطب‌نمای من و تو</strong> می‌شوند.</li><li>شاید نتوانی <strong>مسیر</strong> را آزادانه انتخاب کنی، اما می‌توانی تصمیم بگیری <strong>چطور راه بروی</strong>:</li><li>  - آیا با <strong>صداقت</strong>؟</li><li>  - آیا با <strong>احترام</strong>؟</li><li>  - آیا با <strong>کرامت</strong>؟</li><li>  - آیا با <strong>انصاف</strong>؟</li><li>ارزش‌ها چیزی نیستند که بحران به ما بدهد یا بگیرد. آن‌ها <strong>انتخاب‌های درونی</strong> هستند. وقتی <strong>بیرون بی‌ثبات</strong> می‌شود، داشتن یک <strong>قطب‌نمای درونی</strong> خیلی وقت‌ها برای ما <strong>ثبات</strong> می‌آورد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: در روانشناسی مثبت‌گرا، «ارزش‌ها» به‌عنوان جهت‌گیرهای عمیق زندگی در نظر گرفته می‌شوند که مستقل از شرایط بیرونی می‌توانند به فرد ثبات و معنا بدهند.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-20">
+                    <div class="topic-title">📌 قلمرو چهارم: مرزها — حفظ کرامت در بحران
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2176" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:36:16 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو چهارم، قلمرو مرزهای ماست.</strong> در بحران، آدم‌ها <strong>خسته‌تر</strong>، <strong>حساس‌تر</strong> و <strong>زودتر عصبانی</strong> می‌شوند. مرزها بیشتر <strong>شکسته</strong> می‌شوند.</li><li>اما یکی از <strong>قلمروهای آزادی</strong> این است که تو می‌توانی <strong>مرز بگذاری</strong> — با آگاهی:</li><li>  - می‌توانی بگویی «این گفتگو را ادامه نمی‌دهم.»</li><li>  - می‌توانی بگویی «این بی‌احترامی را نمی‌پذیرم.»</li><li>  - می‌توانی بگویی «این میزان از خبر را شاید مصرف نکنم.»</li><li>  - می‌توانی بگویی «این رابطه اگر چنین باشد، باید بازتعریف شود.»</li><li><strong>مرز گذاشتن در بحران شجاعت می‌خواهد</strong> — اما دقیقاً همان چیزی است که <strong>کرامت ما</strong> را حفظ می‌کند.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: مرزگذاری سالم (Healthy Boundaries) یکی از مفاهیم اساسی در روانشناسی ارتباطی است — توانایی تعیین محدودیت‌های شخصی برای حفظ سلامت روانی و کرامت.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-21">
+                    <div class="topic-title">📌 قلمرو پنجم: توجه — جایی که توجه می‌رود، زندگی می‌رود
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2227" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:37:07 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو پنجم، قلمرو توجه است.</strong> جایی که <strong>توجه</strong> می‌رود، <strong>زندگی</strong> می‌رود.</li><li>در بحران، <strong>اخبار، تحلیل‌ها، ترس‌ها، مقایسه‌ها</strong> می‌توانند تمام توجه ما را <strong>ببلعند</strong>. اما توجه یک <strong>منبع محدود</strong> است. و تو هنوز می‌توانی تصمیم بگیری که به چه چیزی توجه کنی:</li><li>  - به چه کسی؟</li><li>  - به کدام پروژه؟</li><li>  - به کدام مهارت؟</li><li>  - به کدام رابطه؟</li><li>  - به کدام کیفیت؟</li><li>  - به کدام مطالبه؟</li><li>  - به کدام اعتراض؟</li><li>اگر تمام توجهت صرف <strong>تهدید</strong> شود، زندگی تبدیل به یک <strong>مکانیزم بقا</strong> می‌شود. و اگر <strong>بخشی</strong> از توجهت را آگاهانه به چیزهای دیگر بدهی، حتی زندگی از <strong>بقا</strong> هم عبور می‌کند.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: در عصر اقتصاد توجه (Attention Economy)، توجه انسان به‌عنوان یک منبع کمیاب در نظر گرفته می‌شود. مدیریت آگاهانه توجه یکی از مهارت‌های اساسی زندگی در دنیای پر از اطلاعات است.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-22">
+                    <div class="topic-title">📌 قلمرو ششم: روایت — بحران بخشی از داستان است، نه تمام آن
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2272" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:37:52 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>قلمرو ششم — و شاید عمیق‌ترین قلمرو آزادی — قلمرو روایت است.</strong></li><li>بحران می‌تواند <strong>بخشی از داستان</strong> تو باشد، اما لازم نیست <strong>تمام داستان</strong> باشد.</li><li>تو می‌توانی خودت را این‌گونه تعریف کنی: «من نسلی هستم که در سختی زندگی می‌کند و فقط دوام می‌آورد.» یا اینکه: «من انسانی هستم که در زمانه سخت یاد می‌گیرد چگونه عمیق‌تر، مسئول‌تر، حتی انسانی‌تر باشد.»</li><li>نمی‌خواهم بگویم روایت‌ها <strong>غلط</strong> هستند. اما <strong>میزان کارآمدی</strong> روایت‌ها برای ما خیلی مهم است. هر دو روایت ممکن است <strong>معتبر</strong> باشند — اما <strong>روایت دوم</strong> در ما <strong>قدرت</strong> ایجاد می‌کند.</li><li><strong>این بخش درباره انکار محدودیت نیست.</strong> اینکه بگوییم «همه چیز دست خودت است» <strong>بی‌عدالتی</strong> است — واقعاً بی‌عدالتی است. همان‌قدر که بگوییم «هیچ چیز دست من نیست» هم <strong>خودویرانگری</strong> است.</li><li><strong>حقیقت در یک منطقه میانه حضور دارد</strong>: برخی چیزها واقعاً خارج از کنترل من و تو هستند، و برخی چیزها هنوز در قلمرو من و تو هستند — در همان قلمروهای چندگانه‌ای که با هم صحبت کردیم.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: مفهوم «روایت» (Narrative) در روانشناسی و علوم اجتماعی به داستان‌هایی اشاره دارد که افراد برای معنادار کردن زندگی خود می‌سازند. تغییر روایت می‌تواند به تغییر هویت و رفتار منجر شود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-23">
+                    <div class="topic-title">📌 بخش پنجم: انتخاب کردن بدون کنترل — سوءتفاهم بزرگ درباره آزادی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2318" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:38:38 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>چطور انتخاب کنیم وقتی نتیجه‌ها در اختیار ما نیستند؟</strong> اصلاً چرا باید انتخاب کنیم وقتی تضمینی نیست؟</li><li>اینجاست که باید در مورد یک <strong>سوءتفاهم بزرگ درباره آزادی</strong> صحبت کنیم: ما اغلب آزادی را با <strong>کنترل نتیجه</strong> اشتباه می‌گیریم.</li><li>فکر می‌کنیم اگر نتیجه دست ما نباشد، پس آزادی هم نیست. اما در واقعیت، <strong>نتیجه تقریباً هیچ‌وقت کاملاً دست ما نبوده و نخواهد بود</strong>. ما فقط در زمان‌های آرام‌تر، <strong>توهم کنترل بیشتر</strong> را داشتیم.</li><li><strong>بحران این توهم را می‌شکند</strong> — و وقتی توهم کنترل می‌شکند، آزادی باقی خودش را به ما نشان می‌دهد.</li><li><strong>آزادی واقعی این نیست که نتیجه را تضمین کنه. آزادی واقعی اینه که کیفیت انتخابم رو می‌تونم تضمین کنم.</strong></li><li>خیلی جالب است که تو، من و همه ماها نمی‌توانیم همیشه <strong>کنترل</strong> را در زندگی‌مان داشته باشیم. اما همیشه می‌توانیم <strong>موضع</strong> خودمان را مشخص کنیم — در مقابلش.</li><li><strong>موضع یعنی چه؟</strong> یعنی: <strong>چگونه می‌ایستم؟ از چه زاویه‌ای نگاه می‌کنم؟ با چه کیفیتی عمل می‌کنم؟</strong></li><li>دو نفر ممکن است در شرایط مشابه اقتصادی، هر دو تحت فشار باشند. یکی تصمیم می‌گیرد <strong>تلخی</strong> را به خانه ببرد، یکی تصمیم می‌گیرد <strong>تلخی</strong> را بازتولید نکند. یکی تصمیم می‌گیرد <strong>امید</strong> را مسخره کند، یکی تصمیم می‌گیرد <strong>واقع‌گرا</strong> باشد اما <strong>بی‌رحم</strong> نباشد.</li><li><strong>موضع، هویت می‌سازد.</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>سه سؤال کلیدی برای یافتن موضع</strong>: ۱) چگونه می‌ایستم؟ ۲) از چه زاویه‌ای نگاه می‌کنم؟ ۳) با چه کیفیتی عمل می‌کنم؟</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-24">
+                    <div class="topic-title">📌 انتخاب‌های کوچک — پیچ‌های ظریف زندگی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2619" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:43:39 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>بحران، انتخاب‌های بزرگ را کمتر می‌کند</strong> — اما <strong>انتخاب‌های کوچک همیشه وجود دارند</strong>. و اشتباه ما این است که فقط فکر می‌کنیم انتخاب‌های بزرگ ارزشمندند.</li><li><strong>انتخاب‌های کوچک، پیچ‌های ظریفی هستند که سقف روان ما را نگه می‌دارند.</strong></li><li>مثلاً:</li><li>  - امروز به جای واکنش فوری، <strong>۵ ثانیه تمرکز کن، مکث کن</strong>.</li><li>  - امروز <strong>بدنم را نادیده نگیرم</strong>؛ اگر یک فضای حداقلی برای بدنم خلق کنم.</li><li>  - امروز <strong>یک نفر را بی‌دلیل احترام بگذارم</strong>.</li><li>  - امروز <strong>یک قدم کوچک در مسیر یادگیری بردارم</strong>.</li><li>  - امروز <strong>خودم را با دیگران مقایسه نکنم</strong>.</li><li>این‌ها <strong>انقلاب نیستند</strong> — اما <strong>استمرارشان ساختار درونی ما را می‌سازد</strong>. و بحران دقیقاً <strong>ساختار درونی ما</strong> را هدف قرار داده است.</li><li>در کنار هرگونه <strong>مطالبه</strong>، در کنار هرگونه <strong>داستانی</strong> که داریم، به این فضا هم باید توجه کنیم.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این مفهوم با «عادت‌های اتمی» (Atomic Habits) جیمز کلیر هم‌راستاست — تغییرات کوچک و پیوسته می‌توانند تحولات بزرگ ایجاد کنند.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-25">
+                    <div class="topic-title">📌 عاملیت — من بخشی از پاسخ هستم، نه فقط بخشی از مشکل
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2685" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:44:45 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>عاملیت یعنی من بخشی از پاسخ هستم.</strong> عاملیت به این معنا نیست که تو همیشه همه چیز را باید تغییر دهی. عاملیت یعنی <strong>تو بخشی از پاسخ هستی، نه فقط بخشی از مشکل</strong>.</li><li>اگر همه چیز را <strong>بیرون</strong> ببینی، <strong>خودت را حذف کردی</strong>. اگر همه چیز را <strong>درون</strong> ببینی، <strong>خودت را سرزنش کردی</strong>.</li><li>اما اگر بگویی: «اوکی، شرایط سخته — من هنوز می‌تونم کیفیتی رو در زندگی خودم انتخاب کنم» — آن‌وقت <strong>وارد منطقه عاملیت</strong> شده‌ای.</li><li>در بحران، یکی از <strong>عمیق‌ترین اشکال آزادی، تعهد است</strong>. تعهد یعنی چه؟ یعنی حتی اگر <strong>نتیجه تضمین‌شده نباشد</strong>، من <strong>ارزشم را رها نمی‌کنم</strong>.</li><li>مثلاً: حتی اگر بازار ناپایدار باشد، من <strong>کیفیت کارم</strong> را حفظ می‌کنم. حتی اگر رابطه‌ها شکننده باشند، من <strong>صداقت</strong> را حفظ می‌کنم. حتی اگر فضای عمومی خشن باشد، من <strong>علامت</strong> را حفظ می‌کنم.</li><li><strong>تعهد یعنی: من نتیجه نیستم، کیفیت انتخابم هستم.</strong></li><li>این جمله ساده نیست — اما اگر زندگی شود، انسان را از درون <strong>محکم</strong> می‌کند.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>تفاوت عاملیت و کنترل</strong>: کنترل یعنی تلاش برای تغییر همه چیز؛ عاملیت یعنی پذیرش مسئولیت سهم خود در پاسخ، بدون تلاش برای کنترل همه نتایج.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-26">
+                    <div class="topic-title">📌 آزادی در «نه گفتن» — کم کردن به جای اضافه کردن
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2757" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:45:57 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>یکی از <strong>عمیق‌ترین اشکال انتخاب در بحران، نه گفتن است</strong>:</li><li>  - <strong>نه گفتن</strong> به فرسودگی بی‌پایان.</li><li>  - <strong>نه گفتن</strong> به مقایسه دائمی.</li><li>  - <strong>نه گفتن</strong> به مصرف بی‌وقفه خبر.</li><li>  - <strong>نه گفتن</strong> به رابطه‌های سمی.</li><li>  - <strong>نه گفتن</strong> به خودتخریب‌گری.</li><li><strong>گاهی بزرگترین عاملیت، اضافه کردن چیزی نیست — کم کردن است.</strong></li><li>آزادی یعنی اینکه بدانیم <strong>چه چیزی را داریم با خودمان حمل می‌کنیم</strong>. بدانیم <strong>هیچ انتخابی بدون هزینه نیست</strong>:</li><li>  - اگر تصمیم بگیریم <strong>مهربان</strong> بمانیم، ممکن است <strong>ساده‌لوح</strong> به نظر برسیم.</li><li>  - اگر تصمیم بگیریم <strong>مرز</strong> بگذاریم، ممکن است <strong>تنها</strong> شویم.</li><li>  - اگر تصمیم بگیریم <strong>رشد</strong> کنیم، ممکن است موقتاً <strong>کندتر</strong> پیش برویم.</li><li>اما <strong>انتخاب نکردن هم هزینه دارد</strong>: هزینه‌اش <strong>بی‌قدرتی، فرسودگی، خشم مزمن، از دست دادن احترام به خود</strong> است.</li><li><strong>آزادی یعنی در دل بحران، کدام هزینه را من دارم آگاهانه انتخاب می‌کنم؟</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مفهوم کلیدی</strong>: هر انتخاب یک هزینه دارد — اما انتخاب نکردن هم هزینه‌ای دارد. آزادی بالغ یعنی آگاهانه انتخاب کردن هزینه‌ای که می‌توانیم بپردازیم.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-27">
+                    <div class="topic-title">📌 بحران میدان بازی را محدود می‌کند، اما شیوه بازی کردن را نه
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2825" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:47:05 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>من شاید نتوانم محل ایستادنم را تعیین کنم، اما می‌توانم شیوه ایستادنم را تعیین کنم.</strong></li><li><strong>بحران می‌تواند میدان بازی را محدود کند، اما نمی‌تواند شیوه بازی کردن من و تو را تعیین کند — مگر اینکه خودم بخواهم.</strong></li><li>این جمله ساده، اما <strong>سرنوشت‌ساز</strong> است. این تفاوت بین <strong>قربانی بودن</strong> و <strong>عامل بودن</strong> است. بین <strong>واکنش نشان دادن</strong> و <strong>پاسخ دادن</strong>.</li><li><strong>شیوه ایستادن</strong>، <strong>آینده روانی</strong> ما را می‌سازد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>پیام کلیدی بخش پنجم</strong>: آزادی واقعی در بحران، نه در کنترل نتیجه، بلکه در <strong>انتخاب کیفیت موضع و شیوه حضور</strong> است.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-28">
+                    <div class="topic-title">📌 بخش ششم: مسئولیت بدون خشونت علیه خود
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=2899" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:48:19 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>چگونه آزادی زندگی کنیم بدون اینکه خودمان را بی‌رحمانه له کنیم؟</strong></li><li>تا اینجا گفتیم آزادی بیرونی محدود می‌شود اما آزادی درونی باقی می‌ماند، مسئولیت سنگین است، قربانی بودن وسوسه‌برانگیز است، و عاملیت در انتخاب‌های کوچک زندگی وجود دارد.</li><li>حالا به یک <strong>نقطه ظریف و بسیار مهم</strong> می‌رسیم: وقتی از <strong>مسئولیت</strong> حرف می‌زنیم، وقتی از <strong>انتخاب</strong> حرف می‌زنیم، وقتی از <strong>آزادی درونی</strong> حرف می‌زنیم — یک <strong>خطر جدی</strong> به وجود می‌آید: <strong>خشونت علیه خود</strong>.</li><li><strong>خشونت علیه خود یعنی تبدیل کردن آزادی به یک ابزار سرزنش.</strong></li><li>باید <strong>مرز بین مسئولیت سالم و خودتخریب‌گری</strong> را عمیقاً بشناسیم:</li><li>  - <strong>مسئولیت سالم</strong> یعنی: «من سهم خودم را در پاسخ‌هایم می‌پذیرم.»</li><li>  - <strong>خودتخریبی</strong> یعنی: «اگر نتیجه بد شد، من آدم ناتوانی هستم.»</li><li>این دو <strong>شبیه هم به نظر می‌رسند، اما زمین تا آسمان فرق دارند</strong>.</li><li>در بحران، چون <strong>فشار زیاد</strong> است، ذهن به‌راحتی از <strong>مسئولیت سالم</strong> می‌لغزد به سمت <strong>سرزنش خود</strong>.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>هشدار مهم</strong>: مسئولیت بالغ با خودتنبیهی فرق دارد. مسئولیت یعنی پذیرش اثر انتخاب‌ها؛ خودتنبیهی یعنی نابود کردن خود به خاطر هر نتیجه ناخوشایند.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-29">
+                    <div class="topic-title">📌 مسئولیت بالغ — سه ویژگی اساسی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3079" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:51:19 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>مسئولیت بالغ چه شکلی است؟</strong> مسئولیت بالغ <strong>سه ویژگی</strong> دارد:</li><li><strong>ویژگی اول — واقع‌گرایی</strong>: می‌بینیم که <strong>همه چیز دست من نیست</strong>. این واقعیت را می‌پذیریم.</li><li><strong>ویژگی دوم — پذیرش</strong>: می‌پذیریم که <strong>هیچ سهمی هم نداشتن، توهم است</strong>. ما در پاسخ‌هایمان سهمی داریم.</li><li><strong>ویژگی سوم — مهربانی با خود</strong>: در اوج <strong>ادب بودن با خود</strong>. می‌دانیم که <strong>رشد بدون خطا ممکن نیست</strong>.</li><li><strong>مسئولیت بالغ به ما می‌گوید: من مسئول انتخاب‌هایم هستم، اما مسئول همه نتایج جهان که نیستم.</strong></li><li>این جمله را باید چند بار شنید: <strong>من مسئول انتخاب‌هایم هستم، اما مسئول همه نتایج دنیا که نمی‌توانم باشم.</strong></li><li><strong>آزادی بدون شفقت، شکننده می‌شود.</strong> اگر آزادی را بدون شفقت زندگی کنیم، به یک <strong>ماشین بی‌رحم</strong> تبدیل می‌شویم. همه چیز را از خودمان مطالبه می‌کنیم: همیشه باید قوی باشم، همیشه باید درست تصمیم بگیرم، همیشه باید بهتر باشم. و وقتی نمی‌شویم، <strong>خودمان را خرد می‌کنیم</strong>.</li><li><strong>انسان بودن یعنی خطاپذیری.</strong> در بحران، <strong>شفقت با خود یک ضرورت است، نه یک تجمل</strong>.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: مفهوم «شفقت با خود» (Self-Compassion) توسط کریستین نف معرفی شده و شامل سه مؤلفه است: مهربانی با خود، احساس اشتراک انسانی، و ذهن‌آگاهی.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-30">
+                    <div class="topic-title">📌 شفقت با خود — با خودت مثل یک دوست خسته حرف بزن
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3164" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:52:44 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li><strong>شفقت یعنی من با خودم همان‌طوری حرف بزنم که با یک دوست خسته حرف می‌زنم — نه با یک دشمن.</strong></li><li>به <strong>گفتگوی درونی</strong>ات گوش کن. وقتی نتیجه‌ها بد می‌شود، چه صدایی درونت فعال می‌شود؟</li><li>  - آیا می‌گویی: «تو هیچ‌وقت کافی نیستی»؟</li><li>  - یا می‌گویی: «سخت بود. بیا ببینیم چه‌کار باید بکنیم. بیا ببینیم رفیق، چی ازش یاد بگیریم. بیا بریم یه چایی.»</li><li><strong>همین تغییر لحن، فاصله بین رشد و فرسودگی را در ما رقم می‌زند.</strong></li><li>در بحران، گاهی تصمیم‌ها با <strong>اطلاعات ناقص</strong> گرفته می‌شوند. فشار زیاد باعث می‌شود ما سراغ همان <strong>اطلاعات ناقص</strong> برویم. اگر انتظار داشته باشی که همیشه <strong>بهترین نسخه خودت</strong> باشی، <strong>واقعیت انسانی</strong> را نادیده گرفته‌ای.</li><li><strong>مسئولیت بدون خشونت یعنی</strong>: من می‌پذیرم که <strong>آسیب‌پذیرم</strong>، می‌پذیرم که <strong>اشتباه می‌کنم</strong>، می‌پذیرم که <strong>کامل نیستم</strong> — اما خودم را از این داستان‌ها <strong>جدا نمی‌بینم</strong>. من خطا می‌کنم، اما <strong>خطا نیستم</strong>. خطا را تجربه کردم.</li><li><strong>آزادی در بحران نیاز به دو بال دارد: یک قدرت، دو مهربانی.</strong> اگر فقط قدرت باشد، خودمان را خرد می‌کنیم. اگر فقط مهربانی باشد، مسئولیت را فراموش می‌کنیم. <strong>ترکیب این دو یعنی اینکه من پاسخگو هستم و همزمان با خودم انسانی دارم.</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>بزرگترین سوءتفاهم درباره آزادی</strong>: فکر می‌کنیم آزادی یعنی بی‌نقص بودن. اما آزادی انسانی یعنی <strong>انتخاب کردن، خطا کردن، یاد گرفتن، ادامه دادن — بدون اینکه خودمان را نابود کنیم</strong>.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-31">
+                    <div class="topic-title">📌 بخش هفتم: قدرت خاموش آزادی در بحران — جمع‌بندی نهایی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3346" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:55:46 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>اگر تا اینجا با هم آمده‌ایم، یک <strong>مسیر مهم</strong> را با هم دیده‌ایم:</li><li>  - دیدیم که <strong>آزادی بیرونی محدود</strong> می‌شود.</li><li>  - دیدیم که <strong>مسئولیت سنگین</strong> است.</li><li>  - دیدیم که <strong>قربانی بودن</strong> می‌تواند <strong>امن</strong> به نظر برسد.</li><li>  - دیدیم که هنوز <strong>قلمروهایی درون ما</strong> باقی است.</li><li>  - و فهمیدیم که <strong>مسئولیت بدون شفقت</strong>، <strong>خشونت علیه خود</strong> است.</li><li>حالا وقت آن است که همه این‌ها را در یک <strong>تصویر</strong> با هم جمع کنیم.</li><li><strong>آزادی در بحران قرار نیست شبیه شعار باشد. قرار نیست شبیه پیروزی سریع باشد. قرار نیست شبیه موفقیت چشمگیر باشد. آزادی در بحران، لب خاموش، نامرئی — اما عمیقاً واقعی است.</strong></li><li>وقتی از <strong>آزادی درونی</strong> حرف می‌زنیم، در واقع داریم از یک <strong>کرامت انسانی</strong> حرف می‌زنیم. وقتی از <strong>کرامت</strong> می‌گویی، معنایش این است که:</li><li>  - <strong>من شرایط نیستم.</strong></li><li>  - <strong>من نتیجه بحران نیستم.</strong></li><li>  - <strong>من فقط فشار نیستم.</strong></li><li>یعنی که من حتی در محدودیت، <strong>کیفیتی را دارم انتخاب می‌کنم</strong>. ممکن است نتوانم <strong>مسیر</strong> را انتخاب کنم. ممکن است نتوانم <strong>نتیجه</strong> را تضمین کنم. ممکن است نتوانم <strong>سرعت</strong> را تغییر دهم. اما می‌توانم تصمیم بگیرم که: <strong>خودم را کوچک نکنم، دیگری را تحقیر نکنم، ارزش‌هایم را نفروشم.</strong></li><li>و این، <strong>شکل دیگری از آزادی انسانی و کرامت</strong> است.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>تعریف نهایی آزادی در بحران</strong>: آزادی در بحران یعنی <strong>ایستادن آگاهانه در زمینی که لرزان است</strong> — و دانستن اینکه حق تعریف، حق انتخاب، و حق رسیدن به نیازها شاید به طور کامل برآورده نشود، اما <strong>من می‌توانم انسان بودن را تجربه کنم</strong>.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-32">
+                    <div class="topic-title">📌 مقاومت بی‌صدا — حفظ ساختار درونی در بحران
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3439" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:57:19 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>وقتی درباره <strong>مقاومت</strong> حرف می‌زنیم، اغلب <strong>تصویرهای بزرگ</strong> به ذهن ما می‌آید. اما یک نوع <strong>مقاومت دیگر</strong> هم وجود دارد:</li><li>  - <strong>مقاومت در برابر بی‌حسی</strong>.</li><li>  - <strong>مقاومت در برابر قساوت</strong>.</li><li>  - <strong>مقاومت در برابر فکر نکردن</strong>.</li><li>  - <strong>مقاومت در برابر تحقیر خود</strong>.</li><li>  - <strong>مقاومت در برابر تسلیم کامل به روایت «هیچ کاری نمی‌شه کرد»</strong>.</li><li><strong>مقاومت بی‌صداست — اما دقیقاً همان چیزی است که ساختار درونی من به‌عنوان یک انسان را نگه می‌دارد.</strong></li><li>در بحران، اگر <strong>بیرون ناپایدار</strong> باشد و <strong>درون هم فرو بریزد</strong>، انسان <strong>بی‌پناه</strong> می‌شود. اما اگر <strong>درون — حتی کوچک — محکم باقی بماند</strong>، انسان هنوز <strong>انسان</strong> است و <strong>ایستادگی</strong> را تجربه می‌کند.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>توضیح تکمیلی</strong>: این نوع مقاومت در روانشناسی «تاب‌آوری» (Resilience) نامیده می‌شود — توانایی حفظ یا بازیابی سلامت روانی در مواجهه با adversity.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-33">
+                    <div class="topic-title">📌 آزادی یعنی من مؤلف داستان زندگی خودم هستم
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3487" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:58:07 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>یکی از <strong>مهم‌ترین تعاریف آزادی</strong> در زندگی می‌تواند این باشد: <strong>آزادی یعنی من مؤلف داستان زندگی خودم هستم</strong>.</li><li>  - <strong>نه نویسنده کاملش.</strong></li><li>  - <strong>نه کنترل‌کننده همه.</strong></li><li>  - <strong>اما هنوز صاحب صدا.</strong></li><li>بحران ممکن است <strong>فصل سختی</strong> باشد، ممکن است <strong>بخش تاریکی</strong> از کتاب باشد — اما <strong>لازم نیست کل داستان من باشد</strong>.</li><li>وقتی می‌گویی «این شرایط سخته، اما من هنوز انتخاب می‌کنم چگونه باشم» — در واقع داری می‌گویی: <strong>من هنوز مؤلفم، نه فقط شخصیت تحت فشار.</strong></li><li>به این تفاوت <strong>کوچک نیست</strong>. بزرگ‌ترین سوءتفاهم درباره اثرگذاری در فضای ابهام این است که باید <strong>اثر بزرگ</strong> باشد. اما <strong>آزادی درونی، اثر کوچک را قدردانی می‌کند</strong>.</li><li>فرزندمان را ببینیم که چگونه با فشار رفتار می‌کند. همکارمان را ببینیم که چگونه در بی‌ثباتی کرامت را حفظ می‌کند. دوستمان را ببینیم که چگونه بدون انکار، امید را مسخره نمی‌کند.</li><li><strong>این‌ها آزادی‌های درونی هستند که اثرهای ظریفی دارند. این‌ها شاید تیتر خبری نشوند، اما فرهنگ از همین داستان‌ها ساخته می‌شود.</strong></li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>مفهوم کلیدی</strong>: آزادی درونی گاهی تغییر <strong>ساختار</strong> نیست، تغییر <strong>فضا</strong>ست — تغییر کیفیت حضور در همان فضای محدود.</p>
+                    </div>
+
+                </div>
+
+                <div class="topic" id="t-3-34">
+                    <div class="topic-title">📌 آزادی بدون توهم — پیمان پایانی
+                        <a class="time-badge" href="FAD-AI-Aug-Session03-Part01.html#t=3579" target="_blank" data-video-file="FAD-AI-Aug-Session03-Part01.html"><i>⏱</i> 00:59:39 <span class="play-icon">▶</span></a>
+                    </div>
+
+                    <div class="topic-desc">
+                        <ul><li>بیایید <strong>آزادی بدون توهم</strong> را تجربه کنیم. بگذارید کمی شفاف باشیم: <strong>آزادی در بحران همه چیز را درست نمی‌کند</strong>. عدالت را فوری برقرار نمی‌کند. فشار را حذف نمی‌کند. درد را صفر نمی‌کند.</li><li><strong>اما یک چیز را دارد حفظ می‌کند: خودمان را.</strong> و گاهی در زمانه‌ای که همه چیز در حال فرسودگی است، <strong>حفظ خودمان یک عمل اخلاقی است</strong>.</li><li>اگر بخواهیم این اپیزود را با یک <strong>پیمان</strong> ببندیم، شاید این باشد:</li><li>  - <strong>من محدودیت را انکار نمی‌کنم.</strong></li><li>  - <strong>من مسئولیت را می‌پذیرم، اما خودتخریب‌گری نمی‌کنم.</strong></li><li>  - <strong>من آزادی را کوچک می‌بینم، حتی اگر آزادی بزرگ در دسترس نباشد.</strong></li><li>  - <strong>من کرامت را حفظ می‌کنم، حتی اگر شرایط کرامت‌آمیز نباشد.</strong></li><li>این‌ها <strong>پیمان‌های قهرمانانه نیستند</strong> — این‌ها پیمان‌های <strong>انسانی و انسان‌محور</strong> هستند.</li><li>شاید <strong>آزادی در بحران</strong> این نباشد که بگویی «من هر کاری می‌توانم بکنم». شاید آزادی در بحران این باشد که در دل داستان بیایی و بگویی: <strong>«من هنوز می‌توانم انتخاب کنم چگونه — نه از روی انکار، نه از روی ساده‌لوحی، نه از روی شعار — از روی آگاهی.»</strong></li><li><strong>اگر بیرون بی‌ثبات است، درون — بی‌صدا اما محکم — بساز. اگر انتخاب‌ها کم‌اند، کیفیت انتخاب‌ها را بالا ببر. اگر نتیجه‌ها تضمین‌شده نیستند، کرامتت را حفظ کن.</strong></li><li>و شاید در نهایت، <strong>آزادی در بحران</strong> چیزی شبیه این باشد: <strong>ایستادن آگاهانه در زمینی که لرزان است</strong> — و دانستن اینکه حق تعریف، حق انتخاب، و حق رسیدن به نیازهای من شاید به‌طور کامل برآورده نشود، اما <strong>من می‌توانم انسان بودن را تجربه کنم</strong>.</li><li><strong>من می‌توانم محلی که ایستاده‌ام را شاید تعیین نکنم، اما چگونگی ایستادنم را می‌توانم تعیین کنم.</strong></li><li>و باید <strong>چگونگی ایستادن</strong> را قبل از بحران تمرین کرد.</li></ul>
+                    </div>
+
+                    <div class="note-box">
+                        <span class="note-label">◈ نکته تکمیلی</span>
+                        <p><strong>پیام پایانی</strong>: آزادی در بحران، نه یک شعار است، نه یک پیروزی سریع، نه یک موفقیت چشمگیر. آزادی در بحران <strong>لب خاموش، نامرئی — اما عمیقاً واقعی</strong> است. این آزادی، شکل دیگری از <strong>کرامت انسانی</strong> است.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-note" id="footerNote">
+        📚 📚 جزوه جامع دوره هوش مصنوعی و دیتاساینس — جلسه ۳
+    </div>
+</div>
+
+<!-- ============ دکمه‌های شناور ============ -->
+<div class="floating-actions">
+    <button class="floating-btn edit-float" id="floatingEditBtn" title="حالت ویرایش">✏️</button>
+    <button class="floating-btn back-to-top" id="backToTopBtn" title="بازگشت به بالا">↑</button>
+</div>
+
+<!-- ============ نوار ابزار ویرایش ============ -->
+<div class="edit-toolbar" id="editToolbar">
+    <button class="edit-btn primary" id="saveBtn">💾 ذخیره تغییرات</button>
+    <button class="edit-btn warning" id="exportBtn">⬇ خروجی HTML</button>
+    <button class="edit-btn danger" id="resetBtn">🔄 بازنشانی</button>
+    <button class="edit-btn info" id="insertImageBtn">🖼 درج عکس</button>
+    <button class="edit-btn info" id="insertLinkBtn">🔗 درج لینک</button>
+    
+    <button class="edit-btn info" id="editHtmlBtn">⟨/⟩ ویرایش HTML</button>
+    <button class="edit-btn" id="exitEditBtn">✖ خروج از ویرایش</button>
+    <span class="status" id="editStatus">
+        <span class="dot dirty" id="statusDot"></span>
+        <span id="statusText">تغییرات ذخیره‌نشده — از «دانلود HTML» استفاده کنید</span>
+    </span>
+</div>
+
+<!-- ============ نوار ابزار فرمت‌دهی ============ -->
+<div class="format-toolbar" id="formatToolbar" style="inset: auto auto 119px 50%; transform: translateX(-50%);">
+    <button class="fmt-btn bold" data-cmd="bold" title="بولد (Ctrl+B)">B</button>
+    <button class="fmt-btn italic" data-cmd="italic" title="مورب (Ctrl+I)">I</button>
+    <button class="fmt-btn underline" data-cmd="underline" title="زیرخط (Ctrl+U)">U</button>
+    
+    <button class="fmt-btn" data-cmd="link" title="افزودن لینک" style="width:auto;padding:0 0.6rem;font-size:0.85rem;">🔗 لینک</button>
+    <button class="fmt-btn" data-cmd="image" title="درج عکس" style="width:auto;padding:0 0.6rem;font-size:0.85rem;">🖼 عکس</button>
+    
+    <span class="fmt-label">رنگ متن:</span>
+    <button class="color-swatch" data-color="#ef4444" style="background:#ef4444" title="قرمز"></button>
+    <button class="color-swatch" data-color="#f59e0b" style="background:#f59e0b" title="نارنجی"></button>
+    <button class="color-swatch" data-color="#10b981" style="background:#10b981" title="سبز"></button>
+    <button class="color-swatch" data-color="#3b82f6" style="background:#3b82f6" title="آبی"></button>
+    <button class="color-swatch" data-color="#8b5cf6" style="background:#8b5cf6" title="بنفش"></button>
+    <button class="color-swatch" data-color="#e2e8f0" style="background:#e2e8f0" title="سفید"></button>
+    <label class="color-picker-wrapper" title="انتخاب رنگ سفارشی">
+        <input type="color" id="customTextColor" value="#10b981">
+    </label>
+    
+    <span class="fmt-label">پس‌زمینه:</span>
+    <button class="color-swatch" data-bg="#fef08a" style="background:#fef08a" title="زرد ملایم"></button>
+    <button class="color-swatch" data-bg="#bbf7d0" style="background:#bbf7d0" title="سبز ملایم"></button>
+    <button class="color-swatch" data-bg="#bfdbfe" style="background:#bfdbfe" title="آبی ملایم"></button>
+    <button class="color-swatch" data-bg="#fecaca" style="background:#fecaca" title="قرمز ملایم"></button>
+    <button class="color-swatch" data-bg="#e9d5ff" style="background:#e9d5ff" title="بنفش ملایم"></button>
+    <label class="color-picker-wrapper" title="انتخاب پس‌زمینه سفارشی">
+        <input type="color" id="customBgColor" value="#fef08a">
+    </label>
+    
+    <button class="fmt-btn clear-fmt" data-cmd="removeFormat" title="پاک کردن فرمت">✕ پاک</button>
+</div>
+
+<!-- ============ نوار ابزار تصویر ============ -->
+<div class="image-toolbar" id="imageToolbar">
+    <button class="img-btn success" data-img-action="size-up" title="بزرگ‌تر">➕</button>
+    <div class="img-size-label" id="imgSizeLabel">100%</div>
+    <button class="img-btn warning" data-img-action="size-down" title="کوچک‌تر">➖</button>
+    
+    <button class="img-btn" data-img-action="size-reset" title="بازنشانی سایز">↺</button>
+    <button class="img-btn info" data-img-action="edit" title="ویرایش نام فایل">✎</button>
+    <button class="img-btn danger" data-img-action="delete" title="حذف تصویر">🗑</button>
+</div>
+
+<!-- ============ نوار ابزار فرمول ============ -->
+<div class="formula-toolbar" id="formulaToolbar">
+    <button class="formula-btn info" data-formula-action="edit" title="ویرایش فرمول">✎ ویرایش</button>
+    <button class="formula-btn warning" data-formula-action="edit-caption" title="ویرایش توضیح">📝 توضیح</button>
+    <button class="formula-btn danger" data-formula-action="delete" title="حذف فرمول">🗑 حذف</button>
+</div>
+
+<!-- ============ Lightbox ============ -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" title="بستن">✕</button>
+    <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ============ مودال درج عکس ============ -->
+<div class="modal-overlay image-insert-modal" id="imageInsertModal">
+    <div class="modal-box">
+        <h3>🖼 درج عکس از پوشه img</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.85rem;">نام فایل عکس رو وارد کنید. عکس باید قبلاً در پوشه <code style="background: var(--bg-code); padding: 0.1rem 0.5rem; border-radius: 4px; color: var(--text-code); font-family: 'Courier New', monospace;">img</code> کنار فایل HTML قرار گرفته باشه.</p>
+
+        <div class="target-info" id="imageTargetInfo" style="display: none;">
+            <span class="target-icon">📍</span>
+            <span id="imageTargetText"></span>
+        </div>
+
+        <div class="hint-box">
+            📁 ساختار پوشه: <code>./img/your-image.png</code><br>
+            ✅ فرمت‌های مجاز: <code>.png</code> <code>.jpg</code> <code>.jpeg</code> <code>.gif</code> <code>.webp</code> <code>.svg</code>
+        </div>
+
+        <div class="input-row">
+            <span>img/</span>
+            <input type="text" id="imageFilenameInput" placeholder="my-image.png" autocomplete="off">
+        </div>
+
+        <div class="preview-box" id="imagePreviewBox">
+            <span>پیش‌نمایش عکس اینجا نمایش داده می‌شود</span>
+        </div>
+
+        <div class="recent-images" id="recentImagesBox" style="display: none;">
+            <span class="label">📸 عکس‌های اخیراً استفاده‌شده:</span>
+            <div class="thumbs" id="recentThumbs"></div>
+        </div>
+
+        <div class="modal-actions" style="margin-top: 1rem;">
+            <button class="edit-btn primary" id="imageInsertConfirm">✓ درج عکس</button>
+            <button class="edit-btn" id="imageInsertCancel">انصراف</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ مودال درج لینک ============ -->
+<div class="modal-overlay link-insert-modal" id="linkInsertModal">
+    <div class="modal-box">
+        <h3>🔗 درج لینک</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.85rem;">نوع لینک رو انتخاب کنید و آدرس و متن رو وارد کنید.</p>
+
+        <div class="target-info" id="linkTargetInfo" style="display: none;">
+            <span class="target-icon">📍</span>
+            <span id="linkTargetText"></span>
+        </div>
+
+        <div class="link-type-selector">
+            <button class="link-type-btn active" data-link-type="web" id="linkTypeWeb">
+                🌐 لینک اینترنتی
+            </button>
+            <button class="link-type-btn local" data-link-type="local" id="linkTypeLocal">
+                📁 لینک لوکال
+            </button>
+        </div>
+
+        <div class="link-section active" id="webLinkSection">
+            <div class="hint-box">
+                🌐 آدرس کامل سایت رو وارد کنید (مثلاً <code>https://example.com</code>)<br>
+                اگه <code>http://</code> یا <code>https://</code> نذارید، خودکار اضافه می‌شه.
+            </div>
+            <input type="text" id="webLinkUrlInput" placeholder="https://example.com" autocomplete="off">
+        </div>
+
+        <div class="link-section" id="localLinkSection">
+            <div class="hint-box">
+                📁 آدرس فایل یا پوشه لوکال رو وارد کنید<br>
+                مثال: <code>img/document.pdf</code> یا <code>files/notes.docx</code> یا <code>./video.mp4</code>
+            </div>
+            <input type="text" id="localLinkUrlInput" placeholder="files/document.pdf" autocomplete="off" style="direction: ltr;">
+        </div>
+
+        <div class="manual-text-row">
+            <label for="linkDisplayTextInput">متن نمایشی لینک:</label>
+            <input type="text" id="linkDisplayTextInput" placeholder="متن لینک را اینجا وارد کنید" autocomplete="off">
+        </div>
+
+        <div class="preview-text" id="linkPreviewText">
+            <span class="preview-label">پیش‌نمایش:</span>
+            <span class="preview-value" id="linkPreviewContent">—</span>
+        </div>
+
+        <div class="modal-actions" style="margin-top: 1rem;">
+            <button class="edit-btn primary" id="linkInsertConfirm">✓ درج لینک</button>
+            <button class="edit-btn" id="linkInsertCancel">انصراف</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ مودال درج بلوک مستقل ============ -->
+
+
+<!-- ============ مودال ویرایش فرمول ============ -->
+<div class="modal-overlay formula-edit-modal" id="formulaEditModal">
+    <div class="modal-box">
+        <h3>✎ ویرایش فرمول ریاضی</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.85rem;">فرمول LaTeX را ویرایش کنید. حتماً از <code>$$...$$</code> یا <code>$...$</code> استفاده کنید.</p>
+
+        <div class="formula-preview" id="formulaPreview">
+            <span style="opacity: 0.6;">پیش‌نمایش فرمول اینجا نمایش داده می‌شود...</span>
+        </div>
+
+        <div class="hint-box">
+            📐 <strong>راهنما:</strong> برای فرمول‌های نمایشی (وسط‌چین) از <code>$$...$$</code> استفاده کنید.<br>
+            برای فرمول‌های درون‌خطی از <code>$...$</code> استفاده کنید.<br>
+            مثال: <code>$$\vec{v} = \sqrt{v_1^2 + v_2^2}$$</code>
+        </div>
+
+        <label for="formulaTextInput" style="display:block; text-align:right; color:var(--text-sub); font-size:0.8rem; margin-bottom:0.4rem;">متن LaTeX فرمول:</label>
+        <textarea id="formulaTextInput" class="formula-textarea" placeholder="$$\vec{v} = \sqrt{v_1^2 + v_2^2}$$" dir="ltr"></textarea>
+
+        <label for="formulaCaptionInput" style="display:block; text-align:right; color:var(--text-sub); font-size:0.8rem; margin-bottom:0.4rem; margin-top:1rem;">توضیح فارسی (اختیاری):</label>
+        <input type="text" id="formulaCaptionInput" placeholder="مثلاً: دو بعدی" autocomplete="off" style="direction: rtl; text-align: right;">
+
+        <div class="modal-actions" style="margin-top: 1rem;">
+            <button class="edit-btn primary" id="formulaEditConfirm">✓ ذخیره تغییرات</button>
+            <button class="edit-btn" id="formulaEditCancel">انصراف</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ مودال ویرایش مستقیم HTML ============ -->
+<div class="modal-overlay html-edit-modal" id="htmlEditModal">
+    <div class="modal-box">
+        <h3>⟨/⟩ ویرایش مستقیم HTML</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.85rem;">
+            HTML این بخش را مستقیماً ویرایش کنید. پس از ذخیره، تغییرات اعمال می‌شود.
+        </p>
+
+        <div class="target-info" id="htmlEditTargetInfo" style="display: none;">
+            <span class="target-icon">📍</span>
+            <span id="htmlEditTargetText">بخش انتخاب‌شده</span>
+        </div>
+
+        <div class="hint-box">
+            ⚠️ <strong>هشدار:</strong> در ویرایش مستقیم HTML، اگر تگ‌ها را نامتوازن بگذارید، ممکن است صفحه به‌هم بریزد.<br>
+            💡 قبل از ذخیره، ساختار تگ‌ها را چک کنید.
+        </div>
+
+        <label for="htmlEditTextarea" style="display:block; text-align:right; color:var(--text-sub); font-size:0.8rem; margin-bottom:0.4rem;">
+            محتوای HTML:
+        </label>
+        <textarea id="htmlEditTextarea" class="html-edit-textarea" spellcheck="false" dir="ltr"></textarea>
+
+        <div class="html-edit-preview-label">پیش‌نمایش زنده:</div>
+        <div class="html-edit-preview" id="htmlEditPreview"></div>
+
+        <div class="modal-actions" style="margin-top: 1rem;">
+            <button class="edit-btn primary" id="htmlEditConfirm">✓ ذخیره تغییرات</button>
+            <button class="edit-btn warning" id="htmlEditFormat">✨ فرمت‌دهی</button>
+            <button class="edit-btn danger" id="htmlEditRevert">↺ بازگردانی</button>
+            <button class="edit-btn" id="htmlEditCancel">انصراف</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ مودال عمومی ============ -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+        <h3 id="modalTitle">تأیید عملیات</h3>
+        <p id="modalMessage">آیا از انجام این عملیات مطمئن هستید؟</p>
+        <div id="modalExtraContent"></div>
+        <div class="modal-actions">
+            <button class="edit-btn primary" id="modalConfirm">بله، انجام بده</button>
+            <button class="edit-btn" id="modalCancel">انصراف</button>
+        </div>
+    </div>
+</div>
+
+<div class="toast info" id="toast">ℹ️ تغییرات فقط در همین صفحه است. برای ذخیره دائم، از «دانلود HTML» استفاده کنید.</div>
+
+<!-- ============ Prism.js (محلی) ============ -->
+<script src="assets/prism-core.min.js"></script>
+<script src="assets/prism-python.min.js"></script>
+<script src="assets/prism-bash.min.js"></script>
+<script src="assets/prism-yaml.min.js"></script>
+<script src="assets/prism-docker.min.js"></script>
+
+<!-- ============ تنظیمات اختصاصی صفحه ============ -->
+<script>
+    window.NOTES_CONFIG = {
+        storageKey: 'ai_course_notes_3',
+        exportFileName: 'FAD-AI-Aug-Session03-Part01.html'
+    };
+</script>
+
+<!-- ============ اسکریپت مشترک (محلی) ============ -->
+<script src="assets/shared-scripts.js"></script>
+
+<!-- ============================================================
+     MathJax Re-typeset Script
+     (پردازش مجدد در صورت نیاز - هنگام تغییر تم یا ویرایش)
+     ============================================================ -->
+<script>
+(function() {
+    'use strict';
+
+    function typesetMath() {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            return window.MathJax.typesetPromise().catch(function(err) {
+                console.warn('MathJax typeset warning:', err);
+            });
+        }
+        return Promise.resolve();
+    }
+
+    // در دسترس قرار دادن برای استفاده در shared-scripts.js
+    window.retypesetMath = typesetMath;
+
+    // پردازش مجدد فرمول‌ها هنگام تغییر تم
+    const themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', function() {
+            setTimeout(typesetMath, 400);
+        });
+    }
+
+    // اجرای مجدد بعد از رندر کامل صفحه
+    window.addEventListener('load', function() {
+        setTimeout(typesetMath, 500);
+    });
+
+    // اجرای مجدد با تاخیرهای چندگانه (برای اطمینان از آمادگی MathJax)
+    [500, 1500, 3000, 5000].forEach(function(delay) {
+        setTimeout(typesetMath, delay);
+    });
+
+    // اجرای مجدد بعد از بازیابی از localStorage
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(typesetMath, 800);
+    });
+})();
+</script>
+
+
+</body></html>
